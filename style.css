@@ -246,7 +246,7 @@ a[href^="tel:"] {
   }
 
   .a_mobile[href^="tel:"] {
-    font-size: 44px;
+    font-size: 43px;
   }
 
   .border_mobile {
