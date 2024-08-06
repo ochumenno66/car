@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2b2b2b;
+}
+
+.header,
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+.header {
+  background-image: url(img/comp_diagnost.jpg);
+  background-repeat: no-repeat;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.header_title {
+  background-color: rgba(62, 62, 62, 0.4);
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  padding: 0.2em;
+}
+
+/*MAIN*/
+.main {
+  text-align: center;
+}
+
+.main_section_title {
+  color: #fff;
+  padding: 3em;
+  font-weight: 400;
+  line-height: 1.3em;
+  font-size: 33px;
+}
+
+.main_wrapper_mobil {
+  display: none;
+}
+
+.main_description {
+  display: flex;
+}
+
+.main_wrapper {
+  border-radius: 20px;
+  background-color: #3b3b3bfb;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 30px;
+}
+
+.main_title {
+  text-align: center;
+  padding: 14px;
+  font-weight: 400;
+  color: rgb(121, 120, 120);
+}
+
+a[href^="tel:"] {
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+}
+
+.border {
+  border-bottom: 1px solid #2e2e2e;
+  margin: 37px;
+  position: relative;
+  margin-top: 150px;
+}
+
+.main_card {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.card_img {
+  width: 16%;
+}
+
+.card_title {
+  font-size: 20px;
+  color: #030303;
+}
+
+.main_img {
+  max-width: 27.4em;
+  border-radius: 20px;
+  margin-right: 3em;
+}
+
+/*MOBILE*/
+.main_mobile {
+  display: none;
+}
+
+.main_wrapper_mobile {
+  border-radius: 20px;
+  background-color: #3b3b3bfb;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 30px;
+}
+
+.main_title_mobile {
+  text-align: center;
+  padding: 14px;
+  font-weight: 400;
+  color: rgb(121, 120, 120);
+}
+
+.a_mobile[href^="tel:"] {
+  text-decoration: none;
+  color: #fff;
+  font-size: 45px;
+}
+
+.border_mobile {
+  border-bottom: 1px solid #2e2e2e;
+  margin: 17px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.card_mobile {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
+}
+
+.main_card_mobile {
+  margin-bottom: 1em;
+}
+
+.card_img_mobile {
+  width: 3em;
+}
+
+.card_title_mobile {
+  font-size: 20px;
+  color: #030303;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*HEADER*/
+  .header_title {
+    font-size: 2em;
+  }
+
+  /*MAIN*/
+  .main_section_title {
+    font-size: 2.5em;
+    padding: 2em 0.3em 2em;
+  }
+
+  .main_title {
+    font-size: 2em;
+  }
+
+  a[href^="tel:"] {
+    font-size: 70px;
+  }
+
+  .border {
+    margin-top: 100px;
+  }
+
+  .card_title {
+    font-size: 23px;
+  }
+
+  .main_img {
+    display: none;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  /*HEADER*/
+  .header_title {
+    font-size: 1.6em;
+    letter-spacing: 0.1px;
+  }
+
+  /*MAIN*/
+  .main_section_title {
+    padding: 2em 0 2em;
+    font-size: 1.6em;
+    letter-spacing: 0.6px;
+  }
+
+  .main_wrapper {
+    margin: 1em;
+  }
+
+  .main_title {
+    font-size: 35px;
+  }
+
+  a[href^="tel:"] {
+    font-size: 70px;
+  }
+
+  .card_title {
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+  }
+
+  .main_img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  /* стили для широкого смартфона */
+
+  /*HEADER*/
+  .header_title {
+    font-size: 23.7px;
+  }
+
+  /*MAIN*/
+  .main_description {
+    display: none;
+  }
+
+  .main_section_title {
+    padding: 1.5em 0 1.5em;
+    font-size: 1.5em;
+  }
+
+  .main_mobile {
+    display: block;
+  }
+
+  .a_mobile[href^="tel:"] {
+    font-size: 44px;
+  }
+
+  .border_mobile {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* стили для среднего смартфона */
+
+  /*HEADER*/
+  /*MAIN*/
+  .main_mobile {
+    display: block;
+  }
+
+  .main_description {
+    display: none;
+  }
+
+  .main_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* стили для малого смартфона */
+
+  /*HEADER*/
+  /*MAIN*/
+  .main_mobile {
+    display: block;
+  }
+
+  .main_description {
+    display: none;
+  }
+
+  .main_img {
+    display: none;
+  }
+}
